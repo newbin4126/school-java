@@ -30,7 +30,7 @@ public class AppMain extends JFrame implements ActionListener {
 
 
 
-        txt_login = new JTextField("20600 홍길동");
+        txt_login = new JTextField("20617 최유빈");
         btn_login = new JButton("로그인");
 
         ImageIcon image = new ImageIcon("img/Gopher.png");

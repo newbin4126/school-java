@@ -138,7 +138,12 @@ public class Chat extends JFrame implements ActionListener {
         }
         else if(e.getSource() == menuItem[1]) {
             SelectRGB rgbDlg = new SelectRGB();
+            if(rgbDlg.changeColor)
+            chatTextPane.setBackground(rgbDlg.sample.getBackground());
         }else if(e.getSource() == menuItem[2]) {
+        	SelectFont font = new SelectFont();
+        	if(font.changeFont)
+        		userLabel.setFont(font.sample.getFont());
 
         }else if(e.getSource() == menuItem[3]) {}
     }
